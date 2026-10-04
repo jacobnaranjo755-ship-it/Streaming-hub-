@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#0d1724">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="StreamSeason">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="style.css">
+  <title>StreamSeason</title>
+</head>
+<body>
+  <div class="snow" aria-hidden="true"></div>
+  <main class="app">
+    <header class="hero">
+      <div>
+        <p class="eyebrow" id="seasonLabel">WINTER MODE</p>
+        <h1 id="title">Cozy Streaming</h1>
+        <p class="subtitle">All your favorite streaming apps, together.</p>
+      </div>
+      <button class="season-btn" id="seasonBtn" aria-label="Change season">❄️</button>
+    </header>
+
+    <section class="quick">
+      <div class="quick-icon">🍿</div>
+      <div>
+        <strong>Ready for a movie?</strong>
+        <span>Pick a service below and sign in on its official site.</span>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>My streaming apps</h2>
+        <span id="count"></span>
+      </div>
+      <div class="grid" id="services"></div>
+    </section>
+
+    <footer>
+      <span>🔒 Your passwords stay with each streaming service.</span>
+      <span>StreamSeason • <span id="year"></span></span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
